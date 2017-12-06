@@ -1,0 +1,427 @@
+body{
+	font-family: "微软雅黑";
+}
+.header-top{
+	width: 100%;
+	background-color: #333;
+}
+.header-nav .header-logo{
+	margin-top: 6px;
+	float: left;
+}
+.header-nav .header-links{
+	float: right;
+}
+.header-links .link{
+	background: #333;
+	height: 50px;
+}
+.header-links .link>li{
+	float: left;
+	color: #666;
+	line-height: 50px;
+	font-size: 10px;
+	text-align: center;
+}
+.header-links .link>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #666;
+	font-size: 14px;
+	padding: 0 10px;
+}
+.header-links .link .loginSelect>a,.header-links .link .regSelect>a{
+	color: #ccc;
+}
+.header-links .link>li:hover>a{
+	background: #444;
+	color: #ccc;
+}
+.myShopCart{
+	position: relative;
+}
+.shopCartList{
+	position: absolute;
+	left: -40px;
+	top: 50px;
+	width: 300%;
+	padding: 5px 5px;
+	background-color: #fff;
+	font-size: 14px;
+	z-index: 555;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	display: none;
+}
+.shopCartList a{
+	color: #333;
+}
+
+.myShopCart:hover .shopCartList{
+	display: block;
+}
+.myShopCart a:hover {
+	/*background: #515151;*/
+}
+.language{
+	position: relative;
+}
+.languageChange{
+	position: absolute;
+	left: -13px;
+	top: 50px;
+	line-height: 30px;
+	z-index: 555;
+	display: none;
+}
+.languageChange>li{
+	background: #444;
+	text-align: center;
+}
+.languageChange a{
+	padding: 2px 15px;
+	display: block;
+	font-size: 14px;
+	color: #ccc;
+}
+.languageChange a:hover{
+	background-color: #515151;
+}
+.language:hover>.languageChange{
+	display: block;
+}
+/*搜索框*/
+#header-search{
+	position: relative;
+	margin-top: 11px;
+}
+#header-search input{
+	width: 100%;
+	height: 28px;
+	padding: 0 30px 0 15px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	background: #f1f1f1;
+	color: #333;
+}
+#header-search .search-btn{
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	font-size: 18px;
+	color: #333;
+	cursor: pointer;
+}
+/*分类*/
+.navbar-inverse{
+	width: 100%;
+	background-color:#fff;
+	border: none;
+	border-bottom: 2px solid #333;
+}
+/*清除框架中的原样式*/
+.navbar-nav>li>a{
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 0;
+}
+.shopListAll{
+	width: 900px;
+	margin-top: 20px;
+}
+.shopListAll>li{
+	float: left;
+	font-size: 16px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.shopListAll>li:last-child{
+	margin-right: 0;
+}
+.shopListAll>li>a{
+	display: block;
+	width: 80px;
+	height: 30px;
+	/*background-color: #333;*/
+	color: #333 !important;
+	line-height: 30px;
+}
+.shopListAll>li:hover>a{
+	background-color: #515151 !important;
+	color: #fff !important;
+}
+.nav-list .container-fluid{
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+.nav-list .container-fluid .row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.nav-list .container-fluid .navbar-header{
+	background-color: #6198db;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: #fff;
+	float: none;
+	display: none;
+}
+.navbar-toggle:hover{
+	background-color: ;
+}
+/*广告位*/
+.ad{
+	width: 100%;
+	background: #f6f5f5;
+	text-align: center;
+}
+.ad img{
+	width: 100%;
+}
+/*页脚*/
+footer{
+	width: 100%;
+	background: #3b3b3b;
+	padding: 15px 0;
+}
+.footer-company,.myAccount,.communication{
+	margin: 15px 0;
+}
+.footer-company h2,.myAccount h2,.communication h2{
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.footer-company li,.myAccount li{
+	margin-bottom: 10px;
+}
+.footer-company li span,.myAccount li span{
+	font-size: 10px;
+	margin-right: 10px;
+	color: #949494;
+}
+.footer-company li a,.myAccount li a{
+	font-size: 14px;
+	color: #949494;
+}
+.footer-company li:hover span,.myAccount li:hover span{
+	color: #5f97dc;
+}
+.footer-company li:hover a,.myAccount li:hover a{
+	color: #5f97dc;
+}
+.communication{
+	font-size: 14px;
+	color: #949494;
+	line-height: 25px;
+}
+.communication #commInput{
+	width: 250px;
+	height: 30px;
+	border: 1px solid #949494;
+	outline: none;
+	background: #3b3b3b;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	color: #fff;
+}
+.communication #commBtn{
+	display: block;
+	border: none;
+	background-color: rgba(95,151,220,.8);
+	text-align: center;
+	color: #fff;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+}
+.communication #commBtn:hover{
+	background-color: #6198DB;
+}
+.footerCopy{
+	color: #949494;
+	font-size: 12px;
+	width: 280px;
+}
+@media only screen and (min-width: 768px) {
+	.shopListAll{
+		width: 550px;
+	}
+	.shopListAll>li{
+		width: 100px;
+		height: 30px;
+		margin-bottom: 15px;
+	}
+	.shopListAll>li a{
+		width: 100px;
+	}
+	.myAccount{
+		border-right:none;
+	}
+	.regSelect:hover .user{
+		display: block;
+	}
+}
+@media only screen and (max-width:767px) {
+	.nav-list{
+		border-bottom: none;
+	}
+	.header-nav .header-logo{
+		float: none;
+		margin-top:20px;
+		width: 40px;
+	}
+	.header-nav .header-links{
+		float: none;
+		margin-top: 10px;
+	}
+	#header-search{
+		margin-bottom: 20px;
+	}
+	.header-links>.link{
+		width: 220px;
+	}
+	.nav-list .navbar-header,#navbar{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.navbar-inverse .navbar-toggle{
+		display: block;
+	}
+	.shopListAll{
+		width: 100%;
+		margin-top: 1px;
+		margin-bottom: 0px;
+		border-bottom: none;
+	}
+	.shopListAll li{
+		width: 100%;
+		text-align: left;
+		margin-bottom: 2px;
+		background-color: #6198DB;
+	}
+	.shopListAll li a{
+		width: 100%;
+		color: #fff !important;
+	}
+	.shopCartList{
+		display: none!important;
+	}
+	.footer-company{
+		border-right:none;
+	}
+	.footer-company,.myAccount{
+		margin-left: 30px;
+	}
+}
+.returnTop{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+	background-color: #333;
+	line-height: 50px;
+	display: none;
+	cursor: pointer;
+}
+.shopCartList li{
+	position: relative;
+	overflow: hidden;
+}
+.shopCartList li:not(:last-child){
+	padding-bottom: 10px;
+	border-bottom: 1px solid silver;
+}
+.shopCartList li:last-child{
+	margin-top: 10px;
+}
+.shopCartList li div{
+	float: left;
+}
+.shopCartList li .shopCarImg{
+	width: 20%;
+	
+}
+.shopCartList li .shopCarImg img{
+	width: 100%;
+	
+}
+.shopCartList li .shopCarInfo{
+	width: 50%;
+	margin-left: 5%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: 12px;
+	white-space: nowrap;
+	/*line-height: 30px;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.shopCartList li .shopCarPric{
+	width: 22%;
+	margin-right: 3%;
+	text-align: right;
+	font-size: 12px;
+}
+.shopCartList li .shopCarPric span{
+	color: #AC2925;
+	font-weight: 800;
+}
+.shopCartList li .shopCarCon{
+	position: absolute;
+	right: 3%;
+	bottom: 5%;
+	cursor: pointer;
+}
+.shopCartList li .shopCarBtn{
+	float: right;
+	width: auto;
+	height: auto;
+	background-color: ;
+	line-height: 1em;
+	padding: 7px 10px;
+	font-size: 12px;
+}
+.shopCartList li .shopCartNum{
+	position: absolute;
+	bottom: 5%;
+	left: 75%;
+	font-size: 12px;
+}
+.shopCartList li .shopCartNull:hover{
+	background: none;
+}
+
+
+
+/*退出按钮*/
+.regSelect{
+	position: relative;
+}
+
+.user{
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #ccc;
+	z-index: 3;
+	display: none;
+	cursor: pointer;
+}
+.user .SignOut,.user a{
+	display: block;
+	line-height: 35px;
+	color: #333;
+}	

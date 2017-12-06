@@ -1,0 +1,167 @@
+.msg-base{
+	width: 100%;
+	padding: 20px;
+	display: block;
+	font-size: 16px;
+	color: #777;
+	
+	text-decoration: none;
+}
+.msg-btn-5{
+	background-color: #f5fbef;
+	border-radius: 2px;
+	display: inline-block;
+	*zoom: 1;
+	text-decoration: none;
+	height: 25px;
+	line-height: 20px;
+	border: 1px solid #bfd6af;
+	padding: 2px 14px 3px;
+	color: #323333
+}
+.msg-btn-5:hover{
+	background-color: #f6fbf3;
+}
+.msg-mod-main{
+	padding: 10px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.msg-mod-main .msg-mt{
+	display: inline-block;
+	display: block;
+	padding: 10px;
+}
+.msg-mod-main .msg-mt::after{
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.msg-mod-main .msg-mc{
+	overflow: visible;
+}
+.msg-message{
+	background: #f5f5f5;
+}
+.msg-curr{
+	padding-bottom: 15px;
+	color: #6198DB;
+	border-bottom: 2px solid #6198DB;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+}
+.msg-mt{
+	padding: 20px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.msg-label{
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	padding: 6px 0;
+	/*width: 100px;*/
+	text-align: right;
+}
+@media only screen and (max-width:767px ) {
+	/*.msg-label1{
+		width: 38%;
+		padding-left: 10%;
+		box-sizing: border-box;
+	}*/
+	.msg-hobul li{
+		width: 90%;
+		text-align: center;
+	}
+}
+.msg-item{
+    display: block;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.msg-hobul li{
+	float: left;
+	height: 5%;
+	line-height: 20px;
+	border: 1px solid #cfcfcf;
+	padding: 8px 9px;
+	margin: 10px 10px 0 0;
+	cursor: pointer;
+	white-space: nowrap;
+}
+.msg-interest-list{
+	width: 60%;
+	/*margin: 0 auto;*/
+	margin-left: 20%;
+}
+.msg-email{
+	display: block;
+}
+.msg-ftx05{
+	color: #005ea7;
+}
+.msg-ftx05:hover{
+	color: #C81623;
+}
+.msg-hobul .msg-selected{
+	position: relative;
+    border-color: #e4393c;
+    border-width: 2px;
+    padding: 7px 8px;
+}
+.msg-selected s{
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 16px;
+	height: 16px;
+	background: url(//misc.360buyimg.com/user/myjd-2015/css/i/selt.png) no-repeat;
+}
+.msg-success{
+	position: absolute;
+	bottom: -28px;
+	left: 5%;
+	color: greenyellow;
+	display: none;
+}
+#msg-main-1{
+	display: none;
+}
+.mr10{
+	margin-right: 10px;
+}
+#cidInputDIv .msg-itxt{
+	height: 18px;
+	width: 30%;
+	padding: 5px 23px 5px 5px;
+	line-height: 18px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+}
+.jdradio{
+	margin: 3px;
+	vertical-align: -2px;
+}
+#cidInputDIv span{
+	display: block;
+	margin-left: 15%;
+}
+@media only screen and (max-width: 540px) and (min-width: 320px){
+	#cidInputDIv span{
+		display: block;
+		margin-left: 10%;
+	}
+}
+@media only screen and (max-width: 320px){
+	#cidInputDIv span{
+		display: block;
+		margin-left: 1%;
+	}
+}

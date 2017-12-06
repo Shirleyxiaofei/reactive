@@ -1,0 +1,314 @@
+body{
+	font: "微软雅黑";
+	font-size: 16px;
+	box-sizing: border-box;
+}
+.login-section{
+	margin: 10px;
+}
+.login-section .container{
+	margin: 0 auto;
+	min-height: 400px;
+	text-align: left;
+}
+.login-section .login-txt{
+	margin: 0;
+	font-size: 20px;
+	color: #252525;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.login-content h2{
+	font-weight: normal;
+	font-size: 13px;
+	margin: 0 0 14px;
+	padding: 0 0 5px 23px;
+	border-bottom: 1px solid #f2f2f2;
+	background-position: 0 1px;
+	color: #444443;
+}
+.new-users .login-content h2{
+	background: url(../img/login-img/i_page1.gif) no-repeat;
+}
+.registered-users .login-content h2{
+	background: url(../img/login-img/i_page2.gif) no-repeat;
+}
+.login-content>p{
+	line-height: 35px;
+	letter-spacing: 2px;
+}
+.login-content{
+	min-height: 400px;
+	padding: 14px 21px;
+	border: 1px solid #f2f2f2;
+	border-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+	.login-content-left{
+		min-height: 200px;
+		overflow: hidden;
+	}
+	.reg-content-left{
+		min-height: 100px;
+		overflow: hidden;
+	}
+}
+.login-foot-btn{
+	text-align: right;
+	padding: 8px 13px;
+	border: 1px solid #f2f2f2;
+}
+.login-foot-btn a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	font-size: 16px;
+	padding: 10px 15px;
+	font-weight: 700;
+	transition: background 0.3s,color 0.2s;
+	-webkit-transition: background 0.3s,color 0.2s;
+	background: rgba(95,151,220,.8);
+}
+.login-foot-btn a:hover{
+	background: #6198DB;
+}
+.login-foot-btn a input:hover .login-build{
+	background: transparent;
+}
+.form-signin label{
+	margin-top: 10px;
+}
+.form-signin .textwarp em{
+	color: #eb340a;
+}
+.form-signin input{
+	outline: none;
+	border: none;
+}
+.checkbox{
+	float: left;
+}
+.login-con{
+	float: right;
+	color: #eb340a;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.login-user{
+	position: relative;
+}
+.login-name-success{
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	background: greenyellow;
+	color: white;
+	z-index: 3;
+	display: none;
+	
+}
+.login-name-error{
+	background: red;
+	color: white;
+	display: none;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	z-index: 3;
+}
+.login-repass-success{
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	background: greenyellow;
+	color: white;
+	z-index: 3;
+	display: none;
+	
+}
+.login-repass-error{
+	background: red;
+	color: white;
+	display: none;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	z-index: 3;
+}
+.login-psw{
+	position: relative;
+}
+.login-pass-success{
+	background: greenyellow;
+	color: white;
+	display: none;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	z-index: 3;
+}
+.login-name-had{
+	background: orange;
+	color: white;
+	display: none;
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	z-index: 3;
+}
+.login-pass-error{
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	background: red;
+	color: white;
+	z-index: 3;
+	display: none;
+}
+.login-repsw{
+	position: relative;
+}
+.login-success{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: 50%;
+	height: 50%;
+	background: lavender;
+	color: brown;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	display: none;
+}
+.textwarp{
+	border: solid 1px #ddd;
+	width: 100%;
+	height: 52px;
+	margin-top: 10px;
+}
+.textwarp>i{
+	float: left;
+    width: 20%;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 20px;
+    color: #666;
+    font-size: 14px;
+    font-style: normal;
+}
+.textwarp>input{
+	outline: none;
+	border: none;
+	background: none;
+	font-size: 14px;
+    width: 80%;
+    height: 52px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+    border: none;
+    outline: none;
+    /*color: rgb(204, 204, 204);*/
+}
+@media only screen and (max-width:767px ) {
+	.textwarp{
+	border: solid 1px #ddd;
+	width: 100%;
+	height: 34px;
+	margin-top: 10px;
+}
+	.textwarp>i{
+		float: left;
+	    width: 32%;
+	    height: 34px;
+	    line-height: 34px;
+	    padding-left: 10px;
+	    color: #666;
+	    font-size: 14px;
+	    font-style: normal;
+	}
+	.textwarp>input{
+		outline: none;
+		border: none;
+		background: none;
+		font-size: 14px;
+	    width: 68%;
+	    height: 100%;
+	    padding-bottom: 11px;
+	    padding-left: 10px;
+	    padding-top: 16px;
+	    /*color: rgb(204, 204, 204);*/
+	}
+}
+@media only screen and (min-width:767px ) and (max-width:1000px) {
+	.textwarp{
+	border: solid 1px #ddd;
+	width: 100%;
+	height: 34px;
+	margin-top: 10px;
+}
+	.textwarp>i{
+		float: left;
+	    width: 26%;
+	    height: 34px;
+	    line-height: 34px;
+	    padding-left: 10px;
+	    color: #666;
+	    font-size: 14px;
+	    font-style: normal;
+	}
+	.textwarp>input{
+		outline: none;
+		border: none;
+		background: none;
+		font-size: 14px;
+	    width: 74%;
+	    height: 100%;
+	    padding-bottom: 11px;
+	    padding-left: 10px;
+	    padding-top: 16px;
+	    /*color: rgb(204, 204, 204);*/
+	}
+}
+@media only screen and (min-width:1000px ) and (max-width:1200px) {
+	.textwarp{
+	border: solid 1px #ddd;
+	width: 100%;
+	height: 34px;
+	margin-top: 10px;
+}
+	.textwarp>i{
+		float: left;
+	    width: 22%;
+	    height: 34px;
+	    line-height: 34px;
+	    padding-left: 10px;
+	    color: #666;
+	    font-size: 14px;
+	    font-style: normal;
+	}
+	.textwarp>input{
+		outline: none;
+		border: none;
+		background: none;
+		font-size: 14px;
+	    width: 78%;
+	    height: 100%;
+	    padding-bottom: 11px;
+	    padding-left: 10px;
+	    padding-top: 16px;
+	    /*color: rgb(204, 204, 204);*/
+	}
+}
+.textRemind{
+	border: 0 none;
+    font-size: 12px;
+    width: 100%;
+    height: 19px;
+    margin: 5px 0 ;
+    padding-left: 10px;
+ 	display: block;
+ 	color: rgb(204, 204, 204);
+ 	visibility:hidden
+}

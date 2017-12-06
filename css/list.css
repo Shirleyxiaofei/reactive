@@ -1,0 +1,229 @@
+.shopList .container .row .col-md-4{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.contImg{
+	position: relative;
+	overflow: hidden;
+}
+.contImg img{
+	width: 100%;
+	cursor: pointer;
+}
+/*移动端商品详情*/
+.mobileMessage{
+	font-size: 14px;
+	text-align: center;
+}
+.mobileMessage>p:first-child{
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 10px auto;
+}
+.mobileMessage>p:nth-child(2){
+	width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 0px auto;
+}
+.priceAndBtn{
+	overflow: hidden;
+}
+.priceAndBtn span{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px 0 0 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #6198DB;
+}
+.priceAndBtn>a{
+	float: right;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(95,151,220,.8);
+	line-height: 30px;
+	font-size: 12px;
+	margin: 10px 0 0 0;
+}
+.priceAndBtn>a:hover{
+	background-color: #6198DB;
+}
+.leftCover,.rightCover{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	left: -100%;
+	top: 0;
+	transition: all .2s linear;
+	cursor: pointer;
+}
+.rightCover{
+	left: 100%;
+}
+.contImg:hover .leftCover{
+	left:-50%;
+}
+.contImg:hover .rightCover{
+	left:50%;
+}
+.shopMessage{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	display: none;
+}
+.shopMessage a{
+	color: #fff;
+}
+.shopName{
+	width: 170px;
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 40% auto 10px;
+	text-align: center;	
+}
+.shopItem{
+	width: 240px;
+	margin: 0 auto;
+	text-align: center;	
+}
+.contImg:hover .shopMessage{
+	display: block;
+}
+.pageChange{
+	margin: 20px;
+}
+.pageChange .col-xs-12{
+	overflow: hidden;
+}
+.prevPage,#inputPage,.nextPage,.inputGo{
+	float: left;
+}
+.prevPage,.nextPage{
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: rgba(97,152,219,.8);
+	color: #fff;
+	cursor: pointer;
+}
+.prevPage:hover,.nextPage:hover,.inputGo:hover{
+	background-color: rgba(97,152,219,1);
+}
+.inputGo{
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background-color: rgba(97,152,219,.8);
+	cursor: pointer;
+	color: #fff;
+	margin-right: 10px;
+	font-size: 14px;
+}
+#inputPage{
+	width: 150px;
+	height: 30px;
+	margin: 0 10px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	outline: none;
+	background-color: #fff;
+}
+.package{
+	width: 390px;
+}
+@media only screen and (min-width: 1200px){
+	.shopList .container .row .col-md-4{
+		height: 400px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+	.shopList .container .row .col-md-4{
+		height: 333.33px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.shopList .container .row .col-md-4{
+		height: 435px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.prevPage,.nextPage{
+		width: 50px;
+	}
+	#inputPage{
+		width: 100px;
+	}
+	.inputGo{
+		width: 30px;
+	}
+	.package{
+		width: 260px;
+	}
+}
+.contImg .shopSuccess{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100% !important;
+	height: 10%;
+	text-align: center;
+	line-height: 255%;
+	background-color: #dff0d8;
+	z-index: 10;
+	display: none;
+}
+@media only screen and (max-width:767px ) and (min-width:540px ){
+	.contImg .shopSuccess{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 6%;
+		text-align: center;
+		line-height: 255%;
+		background-color: #dff0d8;
+		z-index: 10;
+	}
+}
+@media only screen and (max-width:540px ) and (min-width:320px ){
+	.contImg .shopSuccess{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 10%;
+		text-align: center;
+		line-height: 200%;
+		background-color: #dff0d8;
+		z-index: 10;
+	}
+}
+@media only screen and (max-width:320px ){
+	.contImg .shopSuccess{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 12%;
+		text-align: center;
+		line-height: 150%;
+		background-color: #dff0d8;
+		z-index: 10;
+	}
+}

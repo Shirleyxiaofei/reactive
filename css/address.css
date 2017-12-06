@@ -1,0 +1,229 @@
+.Common{
+	clear: both;
+    padding: 5px 0px;
+    color: #6696b7;
+    font-size: 14px;
+    text-align: left;
+}
+.AddaddressBtn{
+	font-style: normal;
+	float: right;	
+	cursor: pointer;
+}
+.AddaddressBtn:hover{
+	text-decoration: underline;
+}
+/*
+ * 弹出填写信息
+ */
+@media screen and (max-width: 768px) {
+	.Money>a{
+		width: 100px !important;
+	}
+	.Addaddress{
+		min-width: 250px !important;
+	}
+	#AddaddressFrom p{
+		line-height: 25px !important;
+	}
+	#AddaddressFrom p>i{
+		display: block;
+		width: 100% !important;
+		text-align: left !important;
+	}
+	#AddaddressFrom p>input{
+		margin-left: 0 !important;
+		width: 95%;
+	}	
+	#AddaddressFrom p>a{
+		width: 45px !important;
+		height: 30px  !important;
+		line-height: 30px !important;
+		/*margin: 0 auto !important;*/
+	}
+	#AddaddressFrom p>a:nth-child(1){
+		float: left;
+	}
+	
+}
+@media screen and (min-width: 768px ) {
+	.addressRemove{
+		text-align: right;
+		float: left;
+		/*padding-right: 5px;*/
+		width: 50%;
+		
+	}
+	.default{
+		float: right;
+		text-align: left;
+		width: 50%;
+		/*padding-left: 5px;*/
+	}
+	
+}
+.Addaddress{
+	position: fixed;
+	left: 50%;
+	top: 100px;
+	transform: translateX(-50%) ;
+	-webkit-transform: translateX(-50%);
+	overflow: hidden;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	overflow: auto;
+	z-index: 3;
+	display: none;
+	
+}
+#AddaddressFrom p{
+	/*height: 50px;*/
+	width: 100%;
+	line-height: 50px;
+	/*border-bottom: 1px solid #ccc;*/
+	margin-top: 5px;
+	overflow: hidden;
+	padding: 0 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#AddaddressFrom p:last-child{
+	margin-bottom: 30px;
+}
+#AddaddressFrom p:nth-child(1){
+	margin-top: 20px;
+}
+#AddaddressFrom p>i{
+	text-align: right;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    font-style: normal;
+    width: 70px;
+    float: left;
+}
+#AddaddressFrom p>input{
+	outline: none;
+	border: 1px solid #ccc;
+	line-height: 18px;
+    vertical-align: middle;
+    padding: 5px;
+    margin-left: 10px;
+}
+#AddaddressFrom p>a{
+	width: 80px;
+	text-align: center;
+	height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	line-height: 40px;
+	margin-top: 5px;
+	position: relative;
+	left: 31%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	
+}
+#AddaddressFrom p>a:nth-child(2){
+	background: rgb(227,20,54);
+	color: #fff;
+	margin-left: 10px;
+}
+#AddaddressFrom p>a:nth-child(1){
+	background: rgb(45,171,31);
+	color: #fff;
+	margin-right: 10px;
+}
+
+
+/*
+ * 样式
+ */
+.userContent{
+	width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 30px;
+}
+table tr th{
+	padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid #bbb;
+    color: #666;
+    font-weight: normal;
+}
+.userContent tr th:nth-child(1){width: 22%;}
+.userContent tr th:nth-child(2){width: 10%;}
+.userContent tr th:nth-child(3){width: 27%;}
+.userContent tr th:nth-child(4){width: 27%;}
+.userContent tr th:nth-child(5){width: 24%;}
+table tr th i{
+	float: left;
+	text-align: center;
+	font-style: normal;
+}
+.addressRemove{
+	color: #6393b4;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 25px;
+    
+}
+.default{
+	text-align: center;
+	display: block;
+	line-height: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.addressRemove:hover{
+	text-decoration: underline;
+}
+.addActive{
+	background: #eee !important;
+}
+.Money{
+	margin: 20px 0;
+	overflow: hidden;
+}
+.Money>span{
+	float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    color: #666;
+}
+.Money>span>i{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.Money>a{
+	float: right;
+    width: 140px;
+    background: rgba(97,152,219,.8);
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Money>a:hover{
+	background: rgba(97,152,219,1);
+}
+.divaaa>div{
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+}
+
